@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Favourite</string>
+    <string name="name_film">Film Name</string>
+    <string name="date_release">Release Date</string>
+    <string name="popularity">Popularity</string>
+    <string name="vote_average">Vote Average</string>
+    <string name="overview">Overview</string>
+    <string name="image_description">Film Poster</string>
+    <string name="no_overview">No summary available</string>
+</resources>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context=".movie.MovieDetailActivity">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/img_poster"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_margin="5dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/filmname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/name_film"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/judulfilm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.154"
+            app:layout_constraintStart_toEndOf="@+id/img_poster"
+            app:layout_constraintTop_toTopOf="@+id/img_poster" />
+
+        <TextView
+            android:id="@+id/judulfilm"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:text="Nama"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/filmname"
+            app:layout_constraintTop_toBottomOf="@+id/filmname" />
+
+        <TextView
+            android:id="@+id/judul_releasedate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/date_release"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/filmname"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/filmname"
+            app:layout_constraintTop_toBottomOf="@id/judulfilm" />
+
+        <TextView
+            android:id="@+id/txt_releasedate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/date_release"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/img_poster"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/judul_releasedate"
+            app:layout_constraintTop_toBottomOf="@+id/judul_releasedate"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:padding="10dp"
+            app:cardCornerRadius="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_poster"
+            app:layout_constraintVertical_bias="0.096">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+
+                <TextView
+                    android:id="@+id/judul_voteaverage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="116dp"
+                    android:layout_marginEnd="22dp"
+                    android:text="@string/vote_average"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/txt_vote_average"
+                    app:layout_constraintEnd_toStartOf="@+id/judul_popularity"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txt_vote_average"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vote_average"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/judul_voteaverage"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/judul_voteaverage"
+                    app:layout_constraintTop_toBottomOf="@+id/judul_voteaverage"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/judul_popularity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginEnd="116dp"
+                    android:text="@string/popularity"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/txt_popularity"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/judul_voteaverage"
+                    app:layout_constraintTop_toTopOf="@+id/judul_voteaverage" />
+
+                <TextView
+                    android:id="@+id/txt_popularity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/popularity"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/judul_popularity"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/judul_popularity"
+                    app:layout_constraintTop_toBottomOf="@+id/judul_popularity" />
+            </android.support.constraint.ConstraintLayout>
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/overview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/overview"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txt_overview"
+            app:layout_constraintEnd_toEndOf="@id/cardview"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@id/cardview"
+            app:layout_constraintTop_toBottomOf="@+id/cardview" />
+
+        <TextView
+            android:id="@+id/txt_overview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Deskripsi Film"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/overview"
+            app:layout_constraintStart_toStartOf="@+id/overview"
+            app:layout_constraintTop_toBottomOf="@+id/overview" />
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

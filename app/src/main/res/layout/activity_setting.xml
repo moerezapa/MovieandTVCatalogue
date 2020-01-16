@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".reminder.ReminderSettingActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#BDBDBD">
+        <RelativeLayout
+            android:id="@+id/release_reminder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="@color/colorWhite">
+
+            <LinearLayout
+                android:id="@+id/txt_releasereminder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/release_reminder"
+                    android:textSize="20sp"
+                    android:textColor="#000000"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/release_reminder_info"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <Switch
+                android:id="@+id/switch_releasereminder"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/daily_reminder"
+            android:layout_below="@id/release_reminder"
+            android:layout_marginTop="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="@color/colorWhite">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/daily_reminder"
+                android:textSize="20sp"
+                android:textColor="#000000"/>
+
+            <Switch
+                android:id="@+id/switch_dailyreminder"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/change_language"
+            android:layout_below="@id/daily_reminder"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="@color/colorWhite">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/language_setting"
+                android:textSize="20sp"
+                android:textColor="#000000"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

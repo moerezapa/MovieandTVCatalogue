@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Movie and TV Show</string>
+    <string name="tabtitle_movie">Film</string>
+    <string name="tabtitle_tvshow">Pertunjukan TV</string>
+    <string name="tabtitle_favourite">Favorit</string>
+    <string name="delete">Hapus</string>
+    <string name="empty_row">Anda belum menambah daftar favorit</string>
+    <string name="no_overview">Tidak tersedia ikhtisari</string>
+    <string name="add_to_favourite">Berhasil menambahkan ke daftar favorit</string>
+    <string name="delete_from_favourite">Berhasil menghapus dari daftar favorit</string>
+    <string name="image_description">Poster Film</string>
+    <string name="search">Cari</string>
+    <string name="empty_text">TIDAK ADA DATA</string>
+    <string name="setting_reminder">Pengaturan</string>
+    <string name="release_reminder">Fitur Reminder</string>
+    <string name="release_reminder_info">Menunjukkan film yang rilis hari ini</string>
+    <string name="daily_reminder">Fitur Pengingat Harian</string>
+    <string name="upcoming_reminder_msg" >Hai, ayo cek jadwal film hari ini!  </string>
+    <string name="language_setting">Pengaturan Bahasa</string>
+
+    <string name="name_film">Nama Film</string>
+    <string name="date_release">Tanggal Rilis</string>
+
+    <string name="name_tvshow">Nama Pertunjukan TV</string>
+    <string name="daterelease_tvshow">Tanggal Rilis</string>
+
+    <string name="popularity">Popularitas</string>
+    <string name="vote_average">Nilai Vote</string>
+    <string name="overview">Ikhtisar</string>
+
+    <string name="change_language_settings">Ubah Pengaturan Bahasa</string>
+    <string name="confirmation_exitdialog">Apakah Anda Ingin Menutup Movie and TV Show??</string>
+    <string name="confirmation_exitdialog_yes">Ya</string>
+    <string name="confirmation_exitdialog_no">Tidak</string>
+    <string name="appwidget_text">CONTOH</string>
+    <string name="add_widget">Tambahkan widget</string>
+</resources>

@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Movie and TV Catalogue</string>
+    <string name="tabtitle_movie">Movie</string>
+    <string name="tabtitle_tvshow">TV Show</string>
+    <string name="tabtitle_favourite">Favourite</string>
+    <string name="delete">Delete</string>
+    <string name="empty_row">You have not added any favorites</string>
+    <string name="no_overview">No summary available</string>
+    <string name="add_to_favourite">Successfully added to favorites list</string>
+    <string name="delete_from_favourite">Successfully deleted from favorite list</string>
+    <string name="image_description">Film Poster</string>
+    <string name="search">Search</string>
+    <string name="empty_text">NO DATA</string>
+    <string name="setting_reminder">Setting</string>
+    <string name="release_reminder">Release Reminder</string>
+    <string name="release_reminder_info">Reminder showing the movie that released today</string>
+    <string name="daily_reminder">Daily Reminder</string>
+    <string name="upcoming_reminder_msg">Hi, let\'s check movie released today!  </string>
+    <string name="language_setting">Language Setting</string>
+
+    <string name="name_film">Film Name</string>
+    <string name="date_release">Release Date</string>
+
+    <string name="name_tvshow">TV Show Name</string>
+    <string name="daterelease_tvshow">Release Date</string>
+
+    <string name="popularity">Popularity</string>
+    <string name="vote_average">Vote Average</string>
+    <string name="overview">Overview</string>
+
+    <string name="change_language_settings">Change Language Settings</string>
+    <string name="confirmation_exitdialog">Do You Want to Close the Movie and TV Show?</string>
+    <string name="confirmation_exitdialog_yes">Yes</string>
+    <string name="confirmation_exitdialog_no">No</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+</resources>
